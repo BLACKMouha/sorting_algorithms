@@ -1,5 +1,11 @@
 #include "sort.h"
 
+/**
+ * insertion_sort_list - insertion algorithm
+ * Prototype: void insertion_sort_list(listint_t **list);
+ * @list: head of the list
+ * Return: Nothing
+ */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *before, *current, *after;
