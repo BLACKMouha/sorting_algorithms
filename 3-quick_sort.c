@@ -23,7 +23,7 @@ void quick_sort(int *array, size_t size)
 /**
  * partition - selects a pivot and sort around it
  * Prototype: int partition(int *arr, int lo, int hi, int size);
- * @array: array of integers
+ * @arr: array of integers
  * @lo: lowest index
  * @hi: highest index
  * @size: size of the array
