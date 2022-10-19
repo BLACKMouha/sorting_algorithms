@@ -18,16 +18,15 @@ void selection_sort(int *a, size_t size)
 	{
 		jMin = i;
 		for (j = i + 1; j < size; j++)
-		{
 			if (a[j] < a[jMin])
 				jMin = j;
-		}
-		if (jMin != i)
-		{
-			tmp = a[jMin];
-			a[jMin] = a[i];
-			a[i] = tmp;
-		}
+
+		if (jMin == i)
+			continue;
+
+		tmp = a[jMin];
+		a[jMin] = a[i];
+		a[i] = tmp;
 		print_array(a, size);
 	}
 }
